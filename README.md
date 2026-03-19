@@ -1,34 +1,61 @@
 # icmp-dos-attack-analysis-nist-csf
 Analysis of an ICMP Flood DoS attack using the NIST Cybersecurity Framework, including detection, response, and mitigation strategies.
-# ICMP Flood DoS Attack Analysis (NIST CSF)
+# 🚨 ICMP Flood DoS Attack Analysis (NIST CSF)
 
-## Overview
-This project analyzes a Denial of Service (DoS) attack caused by an ICMP flood. The analysis follows the NIST Cybersecurity Framework to identify vulnerabilities, assess impact, and recommend security improvements.
+## 📌 Overview
+This project analyzes a Denial of Service (DoS) attack caused by an ICMP flood targeting a company's internal network. The analysis follows the NIST Cybersecurity Framework (CSF) to identify vulnerabilities, assess impact, and recommend mitigation strategies.
 
-## Incident Summary
-- Attack Type: ICMP Flood DoS
-- Cause: Misconfigured firewall
-- Impact: Network outage for 2 hours
+---
 
-## NIST CSF Analysis
+## ⚠️ Incident Summary
+- **Attack Type:** ICMP Flood DoS  
+- **Cause:** Misconfigured firewall (no ICMP filtering or rate limiting)  
+- **Impact:** Network outage for ~2 hours, internal services unavailable  
 
-### Identify
-- Firewall misconfiguration allowed unrestricted ICMP traffic
+---
 
-### Protect
-- Implement firewall rules and ICMP rate limiting
+## 🧠 NIST CSF Breakdown
 
-### Detect
-- Use IDS/IPS and SIEM tools for monitoring
+### 🔍 Identify
+- Firewall misconfiguration allowed unrestricted ICMP traffic  
+- Lack of monitoring increased exposure  
 
-### Respond
-- Block malicious traffic and isolate affected systems
+### 🛡 Protect
+- Firewall hardening (default-deny rules)  
+- ICMP rate limiting  
+- Network segmentation  
 
-### Recover
-- Restore critical services and validate system integrity
+### 👀 Detect
+- IDS/IPS implementation  
+- SIEM-based monitoring  
+- Traffic anomaly detection  
 
-## Skills Demonstrated
-- Network Security Analysis
-- Incident Response
-- Threat Detection
-- Security Documentation
+### 🚨 Respond
+- Block malicious ICMP traffic  
+- Isolate affected systems  
+- Analyze logs and attack patterns  
+
+### 🔄 Recover
+- Restore critical services first  
+- Validate system integrity  
+- Resume normal operations  
+
+---
+
+## 🛠 Skills Demonstrated
+- Network Security Analysis  
+- Incident Response (NIST CSF)  
+- Threat Detection  
+- Security Documentation  
+
+---
+
+## 📎 Project Files
+- Incident Report (PDF)
+
+---
+
+## 💡 Key Takeaways
+- Misconfigured firewalls create major vulnerabilities  
+- Monitoring is essential for early detection  
+- Defense-in-depth reduces attack impact  
