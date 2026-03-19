@@ -51,7 +51,7 @@ This project analyzes a Denial of Service (DoS) attack caused by an ICMP flood t
 ---
 
 ## 📎 Project Files
-- Incident Report (PDF)
+- Incident Report Analysis (PDF)
 
 ---
 
